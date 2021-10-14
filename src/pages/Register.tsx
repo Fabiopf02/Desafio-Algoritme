@@ -31,7 +31,7 @@ const Register: React.FC = () => {
     const password = passwordRef.current?.value;
     try {
       if (!email || !password) {
-        return;
+        return setLoading(false);
       }
       await SignUpService(email, password, name!);
       setLoading(false);
