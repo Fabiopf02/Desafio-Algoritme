@@ -1,0 +1,16 @@
+.submit-button {
+  width: 100%;
+  border-radius: 4px;
+  margin: 10px 0;
+  height: 45px;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: .3s;
+  border: none;
+}
+
+.submit-button:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+}

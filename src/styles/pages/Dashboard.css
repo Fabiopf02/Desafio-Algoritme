@@ -1,0 +1,27 @@
+.dashboard {
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: var(--bg-primary);
+}
+
+.dashboard .content {
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 85px);
+  display: flex;
+}
+
+.content-container {
+  background-color: var(--bg-secondary);
+  min-height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .dashboard {
+    text-align: center;
+  }
+  .content-container {
+    padding-left: 20px;
+  }
+}

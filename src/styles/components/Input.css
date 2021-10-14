@@ -1,0 +1,29 @@
+.block-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.block-input label {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.block-input input {
+  width: 100%;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  padding: 4px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.block-input .error {
+  border: 1px solid var(--danger);
+}
+
+.block-input input:focus-within {
+  border: 1px solid var(--primary);
+}

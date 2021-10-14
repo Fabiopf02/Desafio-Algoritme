@@ -1,0 +1,130 @@
+.side-bar {
+  width: 30%;
+  max-width: 300px;
+  padding: 10px;
+  background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-bar .brand {
+  display: none;
+}
+
+.side-bar ul {
+  width: 100%;
+  height: 90%;
+}
+
+.side-bar ul li {
+  list-style: none;
+  padding: 5px 0px;
+  margin: 5px 0;
+  color: var(--text-secondary);
+  width: 100%;
+}
+
+.side-bar ul li span h4 {
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.side-bar button {
+  width: auto;
+  height: 36px;
+  border-radius: 10px;
+  padding: 0 10px;
+  background-color: var(--bg-success);
+  transition: .3s;
+  border: 1px solid var(--border-color);
+  color: var(--text-success);
+  margin: 0 10px;
+}
+
+.side-bar button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+  border-radius: 15px;
+}
+
+.side-bar button strong {
+  font-size: 1rem;
+  color: var(--text-success)!;
+}
+
+button.logout {
+  font-size: 14px;
+  margin: 2px 0;
+  padding: 0 10px;
+  background: transparent;
+  color: var(--text-danger);
+  border: 0.5px solid var(--text-danger);
+  display: flex;
+  align-items: center;
+}
+button.logout span {
+  margin-right: 3px;
+  font-weight: bold;
+}
+
+.side-bar .btn-toggle {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: -26px;
+  width: 18px;
+  min-height: 100%;
+  border-radius: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,.04) 100%);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.05);
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  display: none;
+}
+
+.side-bar .btn-toggle:hover {
+  border-radius: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,.07) 100%);
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+}
+
+.side-bar.an {
+  transform: translateX(0);
+}
+
+.chevron-r, .chevron-l {
+  transition: .5s;
+  animation: chevron .9s linear infinite alternate;
+}
+
+@keyframes chevron {
+  from { transform: translateX(-2px); }
+  to { transform: translateX(2px); }
+}
+
+@media only screen and (max-width: 800px) {
+  .side-bar {
+    width: 90%;
+    height: 100%;
+    transform: translateX(-100%);
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    margin-right: 20px; 
+  }
+  .side-bar button {
+    padding: 0 2px;
+  }
+  .side-bar .btn-toggle {
+    display: block;
+  }
+  .side-bar .brand {
+    display: flex;
+  }
+}

@@ -1,0 +1,14 @@
+.container {
+  height: 100vh;
+  background-color: var(--bg-primary);
+  background-image: radial-gradient(ellipse farthest-corner at 45px 45px ,
+  var(--border-color) 0%, transparent 50%, var(--border-color) 130%);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link span {
+  color: var(--primary);
+}

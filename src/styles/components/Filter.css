@@ -1,0 +1,41 @@
+.item {
+  width: 100%;
+  padding: 3px;
+}
+
+.item .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item .row input.inp {
+  width: 100%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.item .row button {
+  margin: 0;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px 8px 8px 2px;
+  border-color: var(--border-color);
+}
+
+select {
+  padding: 8px 0;
+  margin: 6px 0;
+  border-color: var(--border-color);
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+select option {
+  color: var(--text-primary);
+}
