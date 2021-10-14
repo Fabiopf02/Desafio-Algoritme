@@ -31,6 +31,7 @@ const Logon: React.FC = () => {
     const password = passwordRef.current?.value;
     try {
       if (!email || !password) {
+        setLoading(false);
         return setError('Preencha todos os campos!');
       }
       setError('');
