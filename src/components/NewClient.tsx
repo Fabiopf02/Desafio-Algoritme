@@ -68,7 +68,7 @@ const NewClient: React.ForwardRefRenderFunction<ModalHandles, IProps> = ({ data 
         return setError('O número de telefone deve ter no máximo 11 dígitos. (DDD + telefone)');
       }
       setError('');
-      
+
       const client = {
         name,
         phone: Number(phone),
@@ -98,6 +98,7 @@ const NewClient: React.ForwardRefRenderFunction<ModalHandles, IProps> = ({ data 
 
   const closeModal = useCallback(() => {
     clearInputs();
+    setError('');
     modalRef.current?.classList.remove('show');
     modalRef.current?.classList.add('hide');
     modalRef.current?.addEventListener('animationend', () => {

@@ -47,7 +47,7 @@ export async function UpdateObjectService(data: IClient) {
       createdAt: rest.createdAt,
     });
   } catch(err) {
-    console.log(err);
+    throw new Error(String(err));
   }
 }
 

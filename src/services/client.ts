@@ -67,6 +67,7 @@ export async function GetClientService(ref: DocRef) {
     const data = doc.data() as Doc;
 
     return {
+      doc: data.doc,
       id: data.id,
       name: data.name,
       phone: data.phone,

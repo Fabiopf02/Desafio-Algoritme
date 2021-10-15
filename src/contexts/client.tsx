@@ -49,16 +49,20 @@ export const ClientProvider: React.FC = ({ children }) => {
       await SaveObjectService(data);
       handleChange(ref, 'created');
     } catch(err) {
-      setLoading(false);
       throw new Error(String(err));
     }
   }, []);
 
   const getClients = useCallback(async (userId: string) => {
-    setLoading(true);
-    const clients = await GetClientsService(userId);
-    setLoading(false);
-    return clients;
+    try {
+      setLoading(true);
+      const clients = await GetClientsService(userId);
+      setLoading(false);
+      return clients;
+    } catch(err) {
+      setLoading(false);
+      throw new Error(String(err));
+    }
   }, []);
   
   const updateClient = useCallback(async (data: IData) => {
@@ -66,7 +70,6 @@ export const ClientProvider: React.FC = ({ children }) => {
       const ref = await UpdateClientService(data);
       handleChange(ref, 'updated');
     } catch(err) {
-      setLoading(false);
       throw new Error(String(err));
     }
   }, []);
@@ -78,6 +81,7 @@ export const ClientProvider: React.FC = ({ children }) => {
       setLoading(false);
       return res;
     } catch (err) {
+      setLoading(false);
       throw new Error(String(err));
     }
   }, []);
