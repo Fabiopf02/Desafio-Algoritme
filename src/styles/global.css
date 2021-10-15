@@ -3,7 +3,7 @@
   --bg-success: #B2FBD0;
   --text-primary: #030303;
   --text-secondary: #606060;
-  --text-success: ##0d5f07;
+  --text-success: #0d5f07;
   --primary: #0066ff;
   --bg-primary: #ffffff;
   --bg-secondary: #f9f9f9;
@@ -21,7 +21,7 @@
 }
 
 body, html {
-  font-family: -apple-system, 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+  font-family: 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
