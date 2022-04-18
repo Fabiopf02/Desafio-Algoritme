@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/desafio/react-test-gh-pages/static/css/main.005f8307.chunk.css",
+    "main.js": "/desafio/react-test-gh-pages/static/js/main.8ec463b1.chunk.js",
+    "main.js.map": "/desafio/react-test-gh-pages/static/js/main.8ec463b1.chunk.js.map",
+    "runtime-main.js": "/desafio/react-test-gh-pages/static/js/runtime-main.1a22f667.js",
+    "runtime-main.js.map": "/desafio/react-test-gh-pages/static/js/runtime-main.1a22f667.js.map",
+    "static/js/2.3db82882.chunk.js": "/desafio/react-test-gh-pages/static/js/2.3db82882.chunk.js",
+    "static/js/2.3db82882.chunk.js.map": "/desafio/react-test-gh-pages/static/js/2.3db82882.chunk.js.map",
+    "index.html": "/desafio/react-test-gh-pages/index.html",
+    "static/css/main.005f8307.chunk.css.map": "/desafio/react-test-gh-pages/static/css/main.005f8307.chunk.css.map",
+    "static/js/2.3db82882.chunk.js.LICENSE.txt": "/desafio/react-test-gh-pages/static/js/2.3db82882.chunk.js.LICENSE.txt",
+    "static/media/loading.2e4773db.gif": "/desafio/react-test-gh-pages/static/media/loading.2e4773db.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a22f667.js",
+    "static/js/2.3db82882.chunk.js",
+    "static/css/main.005f8307.chunk.css",
+    "static/js/main.8ec463b1.chunk.js"
+  ]
+}
